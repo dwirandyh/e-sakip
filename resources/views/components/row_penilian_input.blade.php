@@ -31,7 +31,7 @@
                           title="{{ $tooltip }}"
                           style="width:15px;"></td>
     <td>&nbsp;</td>
-    <td><select class="form-control" name="kriteria[{{ (isset($id) ? $id : '') }}][pilihan]" data-id="{{ $id }}">
+    <td style="background: #CDFFCC;"><select class="form-control" name="kriteria[{{ (isset($id) ? $id : '') }}][pilihan]" data-id="{{ $id }}">
             @foreach ($nilaiUnitKerja as $row)
                 <option value="{{ $row }}" {{ ($valuePilihan == $row) ? 'selected' : '' }}> {{ $row }}</option>
             @endforeach
@@ -45,6 +45,13 @@
         <label>
             -
         </label>
+    </td>
+    <td>
+        <textarea class="form-control"
+                  name="kriteria[{{ (isset($id) ? $id : '') }}][catatan]">{{ $valueCatatan }}</textarea>
+        @if (isset($detailPenilaian) && count($detailPenilaian) > 0)
+            <input type="hidden" name="kriteria[{{ (isset($id) ? $id : '') }}][idDetail]" value="{{ $valueIDDetail }}">
+        @endif
     </td>
     <td>
         <textarea class="form-control"

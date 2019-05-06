@@ -9,9 +9,18 @@ use Illuminate\Support\Facades\Auth;
 
 class EvaluatorController extends Controller
 {
-    use AuthenticatesUsers;
+    /*
+ |--------------------------------------------------------------------------
+ | Login Controller
+ |--------------------------------------------------------------------------
+ |
+ | This controller handles authenticating users for the application and
+ | redirecting them to your home screen. The controller uses a trait
+ | to conveniently provide its functionality to your applications.
+ |
+ */
 
-    protected $evaluatorRepository;
+    use AuthenticatesUsers;
 
     /**
      * Where to redirect users after login.
@@ -20,23 +29,21 @@ class EvaluatorController extends Controller
      */
     protected $redirectTo = '/evaluator';
 
-    function __construct(EvaluatorRepository $evaluatorRepository)
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
     {
-        $this->middleware('guest', ['except' => 'logout']);
-
-        $this->evaluatorRepository = $evaluatorRepository;
+        $this->middleware('guest:evaluator')->except('logout');
     }
 
-    public function index(){
-        return [];
-    }
 
     public function showLoginForm()
     {
-        return view('login');
+        return view('login_admin');
     }
-
-
 
     function guard()
     {

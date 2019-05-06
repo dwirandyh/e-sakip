@@ -172,7 +172,7 @@
                                                             @include('penilaian.input_d')
                                                         </div>
                                                     </div>
-                                                    <div class="panel box box-primary" style="display: none`;">
+                                                    <div class="panel box box-primary" style="display: none;">
                                                         <div class="box-header with-border">
                                                             <h4 class="box-title">
                                                                 <a data-toggle="collapse" data-parent="#accordion"

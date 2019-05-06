@@ -11,6 +11,8 @@
 |
 */
 
+Route::get('/', 'HomeController@index');
+
 Route::get('/login', 'PetugasSatkerController@showLoginForm')->name('login');
 Route::post('/login', 'PetugasSatkerController@login');
 Route::post('/logout', 'PetugasSatkerController@logout');
@@ -41,8 +43,8 @@ Route::middleware('auth:evaluator')->group(function(){
 
 
 Route::middleware('auth:petugas')->group(function(){
-    Route::get('/', 'HomeController@index');
-    Route::get('/home', 'HomeController@index');
+
+    Route::get('/home', 'HomeController@home');
 
     \App\Helper::generateCRUDRoute('/penilaian', 'PenilaianController');
     Route::get('/penilaian/submit/{id}', 'PenilaianController@submitForm');

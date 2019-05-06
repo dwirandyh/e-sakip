@@ -22,20 +22,36 @@ class PetugasSatkerController extends Controller
 
     function __construct(PetugasSatkerRepository $petugasSatker)
     {
-        $this->middleware('guest', ['except' => 'logout']);
+        $this->middleware('guest:petugas,guest:evaluator', ['except' => 'logout']);
 
         $this->petugasSatker = $petugasSatker;
     }
 
-    public function index(){
-        return [];
+    public function redirectPath()
+    {
+        if (method_exists($this, 'redirectTo')) {
+            return $this->redirectTo();
+        }
+
+        return property_exists($this, 'redirectTo') ? $this->redirectTo : '/';
     }
+
 
     public function showLoginForm()
     {
         return view('login');
     }
 
+    public function logout(Request $request)
+    {
+        $this->guard()->logout();
+        Auth::guard('evaluator')->logout();
+        Auth::guard()->logout();
+
+        $request->session()->invalidate();
+
+        return $this->loggedOut($request) ?: redirect('/');
+    }
 
 
     function guard()
