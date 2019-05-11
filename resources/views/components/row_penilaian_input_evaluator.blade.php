@@ -73,7 +73,7 @@
         @endif
     </td>
     <td>
-        <label>
+        <label id="kontrol{{ $id }}">
             -
         </label>
     </td>

@@ -14,6 +14,8 @@ use App\Repositories\PenilaianRepository;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
+use Mpdf\Mpdf;
+use Mpdf\MpdfException;
 
 class PenilaianController extends BaseController
 {
@@ -58,11 +60,11 @@ class PenilaianController extends BaseController
             'akuntabilitas' => 'mimes:doc,pdf,docx,zip|required',
         ]);
 
-        if ($validator->fails()){
+        if ($validator->fails()) {
             return redirect('/penilaian/add')
                 ->withErrors($validator)
                 ->withInput();
-        }else{
+        } else {
             $renstra = $request->file('renstra');
             $renstraFileName = md5(time() . $renstra->getClientOriginalName()) . '.' . $renstra->getClientOriginalExtension();
             $renstra->move(public_path('files/penilaian'), $renstraFileName);
@@ -79,7 +81,7 @@ class PenilaianController extends BaseController
             $akuntabilitasFileName = md5(time() . $akuntabilitas->getClientOriginalName()) . '.' . $akuntabilitas->getClientOriginalExtension();
             $akuntabilitas->move(public_path('files/penilaian'), $akuntabilitasFileName);
 
-            if ($request->file('dokumen_pendukung')){
+            if ($request->file('dokumen_pendukung')) {
                 $dokumenPendukung = $request->file('dokumen_pendukung');
                 $dokumenPendukungFileName = md5(time() . $dokumenPendukung->getClientOriginalName()) . '.' . $dokumenPendukung->getClientOriginalExtension();
                 $dokumenPendukung->move(public_path('files/penilaian'), $dokumenPendukungFileName);
@@ -147,7 +149,7 @@ class PenilaianController extends BaseController
 
             // form kriteria penilaian
             $kriteria = $request->post('kriteria');
-            foreach ($kriteria as $key => $row){
+            foreach ($kriteria as $key => $row) {
                 $row['id_penilaian'] = $penilaian->id;
                 $row['id_kriteria_penilaian'] = $key;
                 $this->detailPenilaianRepo->create($row);
@@ -158,7 +160,8 @@ class PenilaianController extends BaseController
         }
     }
 
-    public function submitForm(Request $request, $id){
+    public function submitForm(Request $request, $id)
+    {
         $this->viewData['nilaiYT'] = \Config::get('custom.nilaiYT');
         $this->viewData['nilaiAbjad'] = \Config::get('custom.nilaiAbjad');
 
@@ -172,8 +175,9 @@ class PenilaianController extends BaseController
         return view('penilaian.submit', $this->viewData);
     }
 
-    public function submit(Request $request, $id){
-        if (!empty($request->file('renstra'))){
+    public function submit(Request $request, $id)
+    {
+        if (!empty($request->file('renstra'))) {
             $renstra = $request->file('renstra');
             $renstraFileName = md5(time() . $renstra->getClientOriginalName()) . '.' . $renstra->getClientOriginalExtension();
             $renstra->move(public_path('files/penilaian'), $renstraFileName);
@@ -205,7 +209,7 @@ class PenilaianController extends BaseController
             $data['akuntabilitas'] = $akuntabilitasFileName;
         }
 
-        if (!empty($request->file('dokumen_pendukung'))){
+        if (!empty($request->file('dokumen_pendukung'))) {
             $dokumenPendukung = $request->file('dokumen_pendukung');
             $dokumenPendukungFileName = md5(time() . $dokumenPendukung->getClientOriginalName()) . '.' . $dokumenPendukung->getClientOriginalExtension();
             $dokumenPendukung->move(public_path('files/penilaian'), $dokumenPendukungFileName);
@@ -269,12 +273,11 @@ class PenilaianController extends BaseController
         $this->penilaianRepo->update($data, $id);
 
 
-
         // form kriteria penilaian
         $kriteria = $request->post('kriteria');
-        foreach ($kriteria as $key => $row){
-            if (isset($row['idDetail'])){
-                if (isset($row['pilihan'])){
+        foreach ($kriteria as $key => $row) {
+            if (isset($row['idDetail'])) {
+                if (isset($row['pilihan'])) {
                     $detail['pilihan'] = $row['pilihan'];
                 }
                 $detail['nilai'] = $row['nilai'];
@@ -287,13 +290,29 @@ class PenilaianController extends BaseController
         return redirect('/penilaian');
     }
 
-    public function temporaryReport($id){
+    public function temporaryReport($id)
+    {
         $this->viewData['penilaian'] = $this->repository->detail($id);
         $this->viewData['detailPenilaian'] = $this->repository->getDetailPenilaianSubCategory($id);
         return view('penilaian.raport_sementara', $this->viewData);
     }
 
-    public function revisiForm($id){
+    public function temporaryReportPdf($id)
+    {
+        $this->viewData['penilaian'] = $this->repository->detail($id);
+        $this->viewData['detailPenilaian'] = $this->repository->getDetailPenilaianSubCategory($id);
+        $this->viewData['satuanKerja'] = Auth::guard('petugas')->user()->satuanKerja->nama;
+
+        //return view('penilaian.raport_sementara_pdf', $this->viewData);
+
+        $htmlReport = view('penilaian.raport_sementara_pdf', $this->viewData)->render();
+        $mpdf = new \Mpdf\Mpdf();
+        $mpdf->WriteHTML($htmlReport);
+        $mpdf->Output('kertas-kerja-evaluasi-sementara.pdf', 'I');
+    }
+
+    public function revisiForm($id)
+    {
         $this->viewData['nilaiYT'] = \Config::get('custom.nilaiYT');
         $this->viewData['nilaiAbjad'] = \Config::get('custom.nilaiAbjad');
 
@@ -305,21 +324,22 @@ class PenilaianController extends BaseController
         return view('penilaian.revisi', $this->viewData);
     }
 
-    public function submitRevisi(Request $request, $id){
+    public function submitRevisi(Request $request, $id)
+    {
         // form kriteria penilaian
         $kriteria = $request->post('kriteria');
-        foreach ($kriteria as $key => $row){
-            if (isset($row['idDetail'])){
+        foreach ($kriteria as $key => $row) {
+            if (isset($row['idDetail'])) {
                 $detail['catatan_revisi'] = $row['catatan_revisi'];
 
-                if (isset($request->file('kriteria')[$key]['file_revisi'])){
+                if (isset($request->file('kriteria')[$key]['file_revisi'])) {
                     $file = $request->file('kriteria')[$key]['file_revisi'];
-                    if (!empty($file)){
+                    if (!empty($file)) {
                         $fileName = md5(time() . $file->getClientOriginalName()) . '.' . $file->getClientOriginalExtension();
                         $file->move(public_path('files/revisi'), $fileName);
                         $detail['file_revisi'] = $fileName;
                     }
-                }else{
+                } else {
                     $detail['file_revisi'] = null;
                 }
 

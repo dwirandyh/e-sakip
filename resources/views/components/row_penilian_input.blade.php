@@ -46,6 +46,7 @@
     }
 
 
+    $arrKategoriESelect = [87, 88, 89];
     $arrKategoriENilai = [90, 91, 92];
 
 
@@ -59,13 +60,21 @@
     <td>&nbsp;</td>
     <td style="background: #CDFFCC;">
         @if (!in_array($id, $arrKategoriENilai))
-            <select class="form-control"
-                    {{ ($status == 'sementara' ? 'disabled' : '') }} name="kriteria[{{ (isset($id) ? $id : '') }}][pilihan]"
-                    data-id="{{ $id }}" {{ (!empty($catatanEvaluator)) ? 'disabled' : '' }}>
-                @foreach ($nilaiUnitKerja as $row)
-                    <option value="{{ $row }}" {{ ($valuePilihan == $row) ? 'selected' : '' }}>{{ $row }}</option>
-                @endforeach
-            </select>
+            @if (!in_array($id, $arrKategoriESelect))
+                <select class="form-control"
+                        {{ ($status == 'sementara' ? 'disabled' : '') }} name="kriteria[{{ (isset($id) ? $id : '') }}][pilihan]"
+                        data-id="{{ $id }}" {{ (!empty($catatanEvaluator)) ? 'disabled' : '' }}>
+                    @foreach ($nilaiUnitKerja as $row)
+                        <option value="{{ $row }}" {{ ($valuePilihan == $row) ? 'selected' : '' }}>{{ $row }}</option>
+                    @endforeach
+                </select>
+            @else
+                <select class="form-control" readonly
+                        {{ ($status == 'sementara' ? 'disabled' : '') }} name="kriteria[{{ (isset($id) ? $id : '') }}][pilihan]"
+                        data-id="{{ $id }}" {{ (!empty($catatanEvaluator)) ? 'disabled' : '' }}>
+                    <option value="A">A</option>
+                </select>
+            @endif
         @endif
     </td>
     <td>
@@ -76,11 +85,11 @@
         @else
             <input type="number" step="any" class="nilai form-control nilaiE"
                    name="kriteria[{{ (isset($id) ? $id : '') }}][nilai]"
-                   value="{{ $valueNilai }}" {{ ($status == 'sementara' ? 'disabled' : '') }}>
+                   value="{{ $valueNilai }}" {{ ($status == 'sementara' ? 'disabled' : 'readonly') }}>
         @endif
     </td>
     <td>
-        <label>
+        <label id="kontrol{{ $id }}">
             -
         </label>
     </td>

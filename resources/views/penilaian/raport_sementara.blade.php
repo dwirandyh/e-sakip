@@ -24,7 +24,7 @@
                     <!-- general form elements -->
                     <div class="box box-primary">
                         <div class="box-header with-border">
-                            <h3 class="box-title">Raport Sementara</h3>
+                            <h3 class="box-title">Raport Sementara <a href="{{ Request::url() . '/cetak' }}" class="btn btn-primary btn-sm">Cetak Raport</a> </h3>
                         </div>
                         <!-- /.box-header -->
                         <!-- form start -->
@@ -487,7 +487,7 @@
                                         <td>{{ $no }}</td>
                                         <td>{{ $nilai->kriteria->kriteria }}</td>
                                         <td></td>
-                                        <td>{{ $nilai->pilihan }}</td>
+                                        <td></td>
                                         <td>{{ $nilai->nilai }}</td>
                                         <td>{{ $nilai->catatan }}</td>
                                         <td>{{ $nilai->catatan_evaluator }}</td>
@@ -502,7 +502,7 @@
                                     <td style="background: #FBBC05;" colspan="2">HASIL EVALUASI SAKIP (100%)</td>
                                     <td style="background: #FBBC05;">100</td>
                                     <td style="background: #FBBC05;">{{ $penilaian->nilai_akhir }}%</td>
-                                    <td style="background: #FBBC05;">{{ $penilaian->nilai_akhir }}%</td>
+                                    <td style="background: #FBBC05;">{{ $penilaian->nilai_akhir }}</td>
                                 </tr>
                                 </tbody>
                             </table>

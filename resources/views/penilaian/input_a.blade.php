@@ -24,7 +24,7 @@
         <tbody>
         <tr>
             <td>A.</td>
-            <td>Perencanaan Strategis (10%)</td>
+            <td>Perencanaan Kinerja (30%)</td>
             <td>30</td>
             <td><span id="A-persentase">0%</span></td>
             <td><span id="A-nilai">0</span></td>

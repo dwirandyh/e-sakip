@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16b44d05-2b67-4a63-80bf-6e0a03eb468d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Models/KriteriaPenilaian.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/penilaian/raport_sementara.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/penilaian/revisi.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/penilaian/raport_sementara_pdf.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/e-sakip.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/e-sakip.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Evaluator/PenilaianController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Evaluator/PenilaianController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PenilaianController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PenilaianController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/DetailPenilaian.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/DetailPenilaian.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Penilaian.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Penilaian.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/PenilaianRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/PenilaianRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-sakip.rar" beforeDir="false" afterPath="$PROJECT_DIR$/e-sakip.rar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laradock" beforeDir="false" afterPath="$PROJECT_DIR$/laradock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laradock/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/laradock/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laradock/nginx/sites/default.conf" beforeDir="false" afterPath="$PROJECT_DIR$/laradock/nginx/sites/default.conf" afterDir="false" />
@@ -20,21 +17,8 @@
       <change beforePath="$PROJECT_DIR$/public/js/form_penilaian.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/form_penilaian.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/components/row_penilaian_input_evaluator.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/row_penilaian_input_evaluator.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/components/row_penilian_input.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/row_penilian_input.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evaluator/penilaian/data.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evaluator/penilaian/data.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evaluator/penilaian/input_a.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evaluator/penilaian/input_a.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evaluator/penilaian/input_b.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evaluator/penilaian/input_b.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evaluator/penilaian/input_c.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evaluator/penilaian/input_c.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evaluator/penilaian/input_d.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evaluator/penilaian/input_d.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evaluator/penilaian/input_e.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evaluator/penilaian/input_e.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evaluator/penilaian/submit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evaluator/penilaian/submit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/penilaian/data.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/penilaian/data.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/penilaian/input_a.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/penilaian/input_a.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/penilaian/input_b.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/penilaian/input_b.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/penilaian/input_c.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/penilaian/input_c.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/penilaian/input_d.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/penilaian/input_d.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/penilaian/input_e.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/penilaian/input_e.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/penilaian/submit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/penilaian/submit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/penilaian/tambah.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/penilaian/tambah.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/penilaian/raport_sementara.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/penilaian/raport_sementara.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,7 +31,53 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/form_penilaian.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="233">
+              <caret line="890" column="35" selection-start-line="890" selection-start-column="35" selection-end-line="890" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/components/row_penilian_input.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="91" column="18" selection-start-line="91" selection-start-column="18" selection-end-line="91" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/components/row_penilaian_input_evaluator.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="74" column="8" lean-forward="true" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/penilaian/tambah.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="65" selection-start-line="12" selection-start-column="65" selection-end-line="12" selection-end-column="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/penilaian/input_a.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="56" selection-start-line="2" selection-start-column="56" selection-end-line="2" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -58,18 +88,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>input type=&quot;</find>
-      <find>$penilaian</find>
-      <find>perencanaan kinerja tahunan</find>
-      <find>nilai_a</find>
-      <find>nil</find>
-      <find>nilai_a_per</find>
-      <find>A-nilai</find>
-      <find>%</find>
-      <find>valueDetai</find>
-      <find>row_penilaian_input_evaluator</find>
-      <find>submit</find>
-      <find>valueDetail</find>
       <find>tex</find>
       <find>text</find>
       <find>hidden</find>
@@ -88,6 +106,18 @@
       <find>sem</find>
       <find>sementara</find>
       <find>revisi</find>
+      <find>sementar</find>
+      <find>temporary</find>
+      <find>B.</find>
+      <find>b.</find>
+      <find>E.</find>
+      <find>Raport Sementara</find>
+      <find>E-II</find>
+      <find>input</find>
+      <find>id</find>
+      <find>data-</find>
+      <find>show</find>
+      <find>[33]</find>
     </findStrings>
     <replaceStrings>
       <replace>src=&quot;{{ asset('/adminlte</replace>
@@ -115,8 +145,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Repositories/DetailPenilaianRepository.php" />
-        <option value="$PROJECT_DIR$/config/auth.php" />
         <option value="$PROJECT_DIR$/app/Models/Evaluator.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/EvaluatorController.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/evaluator_sidebar.blade.php" />
@@ -146,12 +174,9 @@
         <option value="$PROJECT_DIR$/resources/views/evaluator/penilaian/input_e.blade.php" />
         <option value="$PROJECT_DIR$/app/Models/KriteriaPenilaian.php" />
         <option value="$PROJECT_DIR$/app/Repositories/PenilaianRepository.php" />
-        <option value="$PROJECT_DIR$/resources/views/penilaian/raport_sementara.blade.php" />
         <option value="$PROJECT_DIR$/app/Models/Penilaian.php" />
         <option value="$PROJECT_DIR$/resources/views/evaluator/penilaian/submit.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/penilaian/input_a.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/penilaian/revisi.blade.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Models/DetailPenilaian.php" />
         <option value="$PROJECT_DIR$/resources/views/penilaian/input_b.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/penilaian/input_c.blade.php" />
@@ -160,12 +185,17 @@
         <option value="$PROJECT_DIR$/resources/views/penilaian/data.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/penilaian/tambah.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/penilaian/submit.blade.php" />
-        <option value="$PROJECT_DIR$/public/js/form_penilaian.js" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/PenilaianController.php" />
-        <option value="$PROJECT_DIR$/resources/views/components/row_penilian_input.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/components/row_penilaian_input_evaluator.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/evaluator/penilaian/data.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Evaluator/PenilaianController.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/PenilaianController.php" />
+        <option value="$PROJECT_DIR$/storage/framework/views/45759b15623b1a0fd4455bd2223fec6d0e3fbd9e.php" />
+        <option value="$PROJECT_DIR$/resources/views/penilaian/raport_sementara_pdf.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/penilaian/raport_sementara.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/penilaian/input_a.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/components/row_penilian_input.blade.php" />
+        <option value="$PROJECT_DIR$/public/js/form_penilaian.js" />
+        <option value="$PROJECT_DIR$/resources/views/components/row_penilaian_input_evaluator.blade.php" />
       </list>
     </option>
   </component>
@@ -261,6 +291,8 @@
       <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-ide-helper" />
       <path value="$PROJECT_DIR$/vendor/justinrainbow/json-schema" />
       <path value="$PROJECT_DIR$/vendor/laravelcollective/html" />
+      <path value="$PROJECT_DIR$/vendor/setasign/fpdi" />
+      <path value="$PROJECT_DIR$/vendor/mpdf/mpdf" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -275,7 +307,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -304,14 +335,6 @@
             <path>
               <item name="e-sakip" type="b2602c69:ProjectViewProjectNode" />
               <item name="e-sakip" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="Evaluator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="e-sakip" type="b2602c69:ProjectViewProjectNode" />
-              <item name="e-sakip" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -325,27 +348,13 @@
               <item name="e-sakip" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="evaluator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="e-sakip" type="b2602c69:ProjectViewProjectNode" />
-              <item name="e-sakip" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="evaluator" type="462c0819:PsiDirectoryNode" />
-              <item name="penilaian" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="e-sakip" type="b2602c69:ProjectViewProjectNode" />
-              <item name="e-sakip" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="penilaian" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -355,19 +364,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Project\Website\E-SAKIP\Platform\e-sakip\app\Http\Controllers\Evaluator" />
-      <recent name="D:\Project\Website\E-SAKIP\Platform\e-sakip\app\Http\Controllers" />
-      <recent name="D:\Project\Website\E-SAKIP\Platform\e-sakip\app\Http\Controllers\Administrator\SatuanKerja" />
-      <recent name="D:\Project\Website\E-SAKIP\Platform\e-sakip\resources\views\administrator\satuan_kerja" />
-      <recent name="D:\Project\Website\E-SAKIP\Platform\e-sakip\app\Models" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Project\Website\E-SAKIP\Platform\e-sakip\resources\views\penilaian" />
       <recent name="D:\Project\Website\E-SAKIP\Platform\e-sakip\app\Models" />
       <recent name="D:\Project\Website\E-SAKIP\Platform\e-sakip\resources\views\evaluator\penilaian" />
       <recent name="D:\Project\Website\E-SAKIP\Platform\e-sakip\resources\views\components" />
       <recent name="D:\Project\Website\E-SAKIP\Platform\e-sakip\resources\views\layouts" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Project\Website\E-SAKIP\Platform\e-sakip\app\Http\Controllers\Evaluator" />
+      <recent name="D:\Project\Website\E-SAKIP\Platform\e-sakip\app\Http\Controllers" />
+      <recent name="D:\Project\Website\E-SAKIP\Platform\e-sakip\app\Http\Controllers\Administrator\SatuanKerja" />
+      <recent name="D:\Project\Website\E-SAKIP\Platform\e-sakip\resources\views\administrator\satuan_kerja" />
+      <recent name="D:\Project\Website\E-SAKIP\Platform\e-sakip\app\Models" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -419,17 +428,18 @@
       <workItem from="1557247679968" duration="3189000" />
       <workItem from="1557265915859" duration="2037000" />
       <workItem from="1557285622842" duration="1145000" />
-      <workItem from="1557581517349" duration="3701000" />
+      <workItem from="1557581517349" duration="7391000" />
+      <workItem from="1557592328615" duration="7503000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107981000" />
+    <option name="totallyTimeSpent" value="119174000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2730711" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27760968" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -451,7 +461,7 @@
       <window_info anchor="right" id="Database" order="3" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25037822" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2730711" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -466,7 +476,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32850242" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.19806764" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -488,17 +498,8 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/logout_petugas.blade.php" />
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/evaluator_app.blade.php" />
     <entry file="file://$PROJECT_DIR$/resources/views/evaluator/dashboard.blade.php">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="146" column="43" lean-forward="true" selection-start-line="146" selection-start-column="43" selection-end-line="146" selection-end-column="43" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/evaluator_sidebar.blade.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -593,9 +594,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/PetugasSatker.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Models/Evaluator.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -603,13 +601,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/penilaian/raport_sementara.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="513" column="30" lean-forward="true" selection-start-line="513" selection-start-column="30" selection-end-line="513" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -701,24 +692,10 @@
     <entry file="file://$PROJECT_DIR$/public/files/revisi/1649312593d4d2de1d828e3b1235a768.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/penilaian/input_a.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="14" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/penilaian/input_b.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="177">
           <caret line="229" column="48" selection-start-line="229" selection-start-column="48" selection-end-line="229" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="55" column="46" selection-start-line="55" selection-start-column="46" selection-end-line="55" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -750,13 +727,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/penilaian/tambah.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="174" column="86" selection-start-line="174" selection-start-column="86" selection-end-line="174" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/penilaian/submit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="333">
@@ -771,44 +741,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/form_penilaian.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="87" column="31" selection-start-line="87" selection-start-column="31" selection-end-line="87" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/components/row_penilian_input.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="79" column="14" lean-forward="true" selection-start-line="71" selection-start-column="8" selection-end-line="79" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/components/row_penilaian_input_evaluator.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="71" column="45" selection-start-line="71" selection-start-column="45" selection-end-line="71" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PenilaianController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="315" column="38" lean-forward="true" selection-start-line="315" selection-start-column="38" selection-end-line="315" selection-end-column="38" />
-          <folding>
-            <element signature="e#129#183#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/penilaian/data.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="115" column="53" lean-forward="true" selection-start-line="115" selection-start-column="53" selection-end-line="115" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/evaluator/penilaian/data.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -820,6 +752,100 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
           <caret line="112" column="36" selection-start-line="112" selection-start-column="36" selection-end-line="112" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-357">
+          <caret selection-end-line="12" selection-end-column="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/PetugasSatker.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="26" column="31" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="49" column="74" selection-start-line="49" selection-start-column="74" selection-end-line="49" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PenilaianController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="304" lean-forward="true" selection-start-line="304" selection-end-line="304" />
+          <folding>
+            <element signature="e#129#183#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/framework/views/45759b15623b1a0fd4455bd2223fec6d0e3fbd9e.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="26" column="78" selection-start-line="26" selection-start-column="78" selection-end-line="26" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/penilaian/raport_sementara_pdf.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="490" column="70" selection-start-line="490" selection-start-column="70" selection-end-line="490" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/penilaian/raport_sementara.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="504" column="98" lean-forward="true" selection-start-line="504" selection-start-column="98" selection-end-line="504" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/penilaian/data.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="115" column="53" lean-forward="true" selection-start-line="115" selection-start-column="53" selection-end-line="115" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/penilaian/input_a.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="56" selection-start-line="2" selection-start-column="56" selection-end-line="2" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/penilaian/tambah.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="65" selection-start-line="12" selection-start-column="65" selection-end-line="12" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/form_penilaian.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="890" column="35" selection-start-line="890" selection-start-column="35" selection-end-line="890" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/components/row_penilian_input.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="91" column="18" selection-start-line="91" selection-start-column="18" selection-end-line="91" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/components/row_penilaian_input_evaluator.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="74" column="8" lean-forward="true" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="8" />
         </state>
       </provider>
     </entry>
