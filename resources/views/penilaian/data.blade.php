@@ -116,6 +116,10 @@
                             return 'Menunggu Submit';
                         }else if (row.status === 'submit'){
                             return 'Menunggu Evaluasi';
+                        }else if (row.status === 'sementara'){
+                            return 'Raport Sementara Sudah Siap, Silahkan Lakukan Revisi';
+                        }else if (row.status === 'revisi'){
+                            return 'Menunggu penilaian revisi dari evaluator';
                         }
                     }
                 },
@@ -127,6 +131,9 @@
                     "render": function (data, type, row) {
                         if (row.status === 'input') {
                             return '<a href="{{ url($route) }}/submit/' + row.id + '" class="btn btn-sm btn-warning" id="edit_' + row.id + '" onclick=""><i class="fa fa-edit"></i> Evaluasi & Submit</a>';
+                        }else if (row.status === 'sementara'){
+                            return '<a href="{{ url($route) }}/raport-sementara/' + row.id + '" class="btn btn-sm btn-primary"><i class="fa fa-pdf"></i> Raport Sementara</a>' +
+                                ' <a href="{{ url($route) }}/revisi/' + row.id + '" class="btn btn-sm btn-warning"><i class="fa fa-edit"></i> Revisi Raport</a>';
                         }
                     }
                 }

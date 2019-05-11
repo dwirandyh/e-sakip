@@ -218,6 +218,54 @@
                                                 </table>
 
                                                 <input type="hidden" name="nilai_akhir" id="nilai_akhir" value="0">
+                                                <input type="hidden" name="nilai_A_persentase" id="nilai_A_persentase" value="0">
+                                                <input type="hidden" name="nilai_A" id="nilai_A" value="0">
+                                                <input type="hidden" name="nilai_A_I_persentase" id="nilai_A_I_persentase" value="0">
+                                                <input type="hidden" name="nilai_A_I" id="nilai_A_I" value="0">
+                                                <input type="hidden" name="nilai_A_I_a_persentase" id="nilai_A_I_a_persentase" value="0">
+                                                <input type="hidden" name="nilai_A_I_a" id="nilai_A_I_a" value="0">
+                                                <input type="hidden" name="nilai_A_I_b_persentase" id="nilai_A_I_b_persentase" value="0">
+                                                <input type="hidden" name="nilai_A_I_b" id="nilai_A_I_b" value="0">
+                                                <input type="hidden" name="nilai_A_I_c_persentase" id="nilai_A_I_c_persentase" value="0">
+                                                <input type="hidden" name="nilai_A_I_c" id="nilai_A_I_c" value="0">
+                                                <input type="hidden" name="nilai_A_II_persentase" id="nilai_A_II_persentase" value="0">
+                                                <input type="hidden" name="nilai_A_II" id="nilai_A_II" value="0">
+                                                <input type="hidden" name="nilai_A_II_a_persentase" id="nilai_A_II_a_persentase" value="0">
+                                                <input type="hidden" name="nilai_A_II_a" id="nilai_A_II_a" value="0">
+                                                <input type="hidden" name="nilai_A_II_b_persentase" id="nilai_A_II_b_persentase" value="0">
+                                                <input type="hidden" name="nilai_A_II_b" id="nilai_A_II_b" value="0">
+                                                <input type="hidden" name="nilai_A_II_c_persentase" id="nilai_A_II_c_persentase" value="0">
+                                                <input type="hidden" name="nilai_A_II_c" id="nilai_A_II_c" value="0">
+                                                <input type="hidden" name="nilai_B_persentase" id="nilai_B_persentase" value="0">
+                                                <input type="hidden" name="nilai_B" id="nilai_B" value="0">
+                                                <input type="hidden" name="nilai_B_I_persentase" id="nilai_B_I_persentase" value="0">
+                                                <input type="hidden" name="nilai_B_I" id="nilai_B_I" value="0">
+                                                <input type="hidden" name="nilai_B_II_persentase" id="nilai_B_II_persentase" value="0">
+                                                <input type="hidden" name="nilai_B_II" id="nilai_B_II" value="0">
+                                                <input type="hidden" name="nilai_B_III_persentase" id="nilai_B_III_persentase" value="0">
+                                                <input type="hidden" name="nilai_B_III" id="nilai_B_III" value="0">
+                                                <input type="hidden" name="nilai_C_persentase" id="nilai_C_persentase" value="0">
+                                                <input type="hidden" name="nilai_C" id="nilai_C" value="0">
+                                                <input type="hidden" name="nilai_C_I_persentase" id="nilai_C_I_persentase" value="0">
+                                                <input type="hidden" name="nilai_C_I" id="nilai_C_I" value="0">
+                                                <input type="hidden" name="nilai_C_II_persentase" id="nilai_C_II_persentase" value="0">
+                                                <input type="hidden" name="nilai_C_II" id="nilai_C_II" value="0">
+                                                <input type="hidden" name="nilai_C_III_persentase" id="nilai_C_III_persentase" value="0">
+                                                <input type="hidden" name="nilai_C_III" id="nilai_C_III" value="0">
+                                                <input type="hidden" name="nilai_D_persentase" id="nilai_D_persentase" value="0">
+                                                <input type="hidden" name="nilai_D" id="nilai_D" value="0">
+                                                <input type="hidden" name="nilai_D_I_persentase" id="nilai_D_I_persentase" value="0">
+                                                <input type="hidden" name="nilai_D_I" id="nilai_D_I" value="0">
+                                                <input type="hidden" name="nilai_D_II_persentase" id="nilai_D_II_persentase" value="0">
+                                                <input type="hidden" name="nilai_D_II" id="nilai_D_II" value="0">
+                                                <input type="hidden" name="nilai_D_III_persentase" id="nilai_D_III_persentase" value="0">
+                                                <input type="hidden" name="nilai_D_III" id="nilai_D_III" value="0">
+                                                <input type="hidden" name="nilai_E_persentase" id="nilai_E_persentase" value="0">
+                                                <input type="hidden" name="nilai_E" id="nilai_E" value="0">
+                                                <input type="hidden" name="nilai_E_I_persentase" id="nilai_E_I_persentase" value="0">
+                                                <input type="hidden" name="nilai_E_I" id="nilai_E_I" value="0">
+                                                <input type="hidden" name="nilai_E_II_persentase" id="nilai_E_II_persentase" value="0">
+                                                <input type="hidden" name="nilai_E_II" id="nilai_E_II" value="0">
                                             </div>
                                         </div>
                                     </div>
@@ -243,50 +291,5 @@
 @endsection
 
 @section('js')
-    <script>
-        $(document).ready(function () {
-            $('[data-toggle="popover"]').popover();
-
-            $('tr select').trigger('change');
-        });
-
-        $("tr select").change(function () {
-            var value = $(this).val();
-
-            var result = 0;
-            if (value == 'Y') {
-                result = 1.00;
-            } else if (value == 'T') {
-                result = 0;
-            } else if (value == 'A') {
-                result = 1.00;
-            } else if (value == 'B') {
-                result = 0.75;
-            } else if (value == 'C') {
-                result = 0.5;
-            } else if (value == 'D') {
-                result = 0.25;
-            } else if (value == 'E') {
-                result = 0;
-            }
-
-            $(this).closest('tr').find("input[type='number']").val(result);
-
-            sumTotal();
-        });
-
-        function sumTotal() {
-            var sum = 0;
-            $("tr .nilai").each(function () {
-                var nilai = $(this).val();
-                if (nilai != '' && nilai != undefined) {
-                    sum += parseFloat(nilai);
-                }
-            });
-
-            $("#nilai_akhir").val(sum);
-            $("#total-persentase").html(sum + '%');
-            $("#total-nilai").html(sum);
-        }
-    </script>
+    <script src="{{ asset('js/form_penilaian.js') }}"></script>
 @endsection

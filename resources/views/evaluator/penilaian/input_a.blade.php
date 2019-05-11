@@ -1,11 +1,11 @@
 <div class="box-body">
-    <h4>I. Perencanaan Strategis (10%)</h4>
-    <h4> a. Pemenuhan Renstra (2%)</h4>
-    <table class="table table-bordered">
+    <h4>Perencanaan Strategis (10%)</h4>
+    <table class="table table-bordered" id="table-A-I-a">
         <thead>
         <tr>
             <td>No</td>
             <td>Sub Komponen</td>
+            <td rowspan="2">Bobot</td>
             <td colspan="2">Unit Kerja/SKPD</td>
             <td width="5%" rowspan="2">Kontrol Kerangka</td>
             <td rowspan="2">Catatan</td>
@@ -19,13 +19,45 @@
         </tr>
         </thead>
         <tbody>
+        <tr>
+            <td>A.</td>
+            <td>Perencanaan Strategis (10%)</td>
+            <td>30</td>
+            <td><span id="A-persentase">0%</span></td>
+            <td><span id="A-nilai">0</span></td>
+        </tr>
+        <tr>
+            <td>I.</td>
+            <td>Perencanaan Strategis (10%)</td>
+            <td>10</td>
+            <td><span id="A-I-persentase">0</span></td>
+            <td><span id="A-I-nilai">0</span></td>
+        </tr>
+        <tr>
+            <td>a.</td>
+            <td>Pemenuhan Renstra (2%)</td>
+            <td>2</td>
+            <td><span id="A-I-a-persentase">0</span></td>
+            <td><span id="A-I-a-nilai">0</span></td>
+        </tr>
         @component('components.row_penilaian_input_evaluator',
            [
                'nilaiUnitKerja' => $nilaiYT,
                'no' => 1,
                'id' => 1,
                'judul' => 'Renstra telah disusun',
-               'detailPenilaian' => (isset($detailPenilaian) ? $detailPenilaian : [])
+               'detailPenilaian' => (isset($detailPenilaian) ? $detailPenilaian : []),
+               'tooltip' => 'Keterangan pengisian nilai:
+• nilai A jika seluruh tujuan telah dilengkapi dengan ukuran keberhasilan
+• nilai B jika > 90% tujuan telah dilengkapi dengan ukuran keberhasilan
+• nilai C jika 75%< tujuan yang telah dilengkapi dengan ukuran keberhasilan < 90%
+• nilai D jika 20%< tujuan yang telah dilengkapi dengan ukuran keberhasilan < 75%
+• nilai E jika tujuan yang telah dilengkapi dengan ukuran keberhasilan < 20%
+ukuran keberhasilan tujuan adalah ukuran atau parameter terukur yang merepresentasikan
+tercapai/terwujud atau tidaknya tujuan yang ditetapkan
+catatan:
+Dalam kondisi tertentu, ukuran keberhasilan tujuan dapat direpresentasikan oleh
+indikator sasaran tahun terakhir dari periode Renstra',
            ]
         )
         @endcomponent
@@ -113,11 +145,12 @@
     </table>
 
     <h4> b. Kualitas renstra (5%)</h4>
-    <table class="table table-bordered">
+    <table class="table table-bordered" id="table-A-I-b">
         <thead>
         <tr>
             <td>No</td>
             <td>Sub Komponen</td>
+            <td rowspan="2">Bobot</td>
             <td colspan="2">Unit Kerja/SKPD</td>
             <td width="5%" rowspan="2">Kontrol Kerangka</td>
             <td rowspan="2">Catatan</td>
@@ -130,6 +163,13 @@
         </tr>
         </thead>
         <tbody>
+        <tr>
+            <td>b.</td>
+            <td>KUALITAS RENSTRA (5%)</td>
+            <td>5</td>
+            <td><span id="A-I-b-persentase">0</span></td>
+            <td><span id="A-I-b-nilai">0</span></td>
+        </tr>
         @component('components.row_penilaian_input_evaluator',
            [
                'nilaiUnitKerja' => $nilaiAbjad,
@@ -221,11 +261,12 @@
     </table>
 
     <h4> c. Implementasi renstra (3%)</h4>
-    <table class="table table-bordered">
+    <table class="table table-bordered" id="table-A-I-c">
         <thead>
         <tr>
             <td>No</td>
             <td>Sub Komponen</td>
+            <td rowspan="2">Bobot</td>
             <td colspan="2">Unit Kerja/SKPD</td>
             <td width="5%" rowspan="2">Kontrol Kerangka</td>
             <td rowspan="2">Catatan</td>
@@ -238,6 +279,13 @@
         </tr>
         </thead>
         <tbody>
+        <tr>
+            <td>c.</td>
+            <td>Implementasi renstra (3%)</td>
+            <td>3</td>
+            <td><span id="A-I-c-persentase">0</span></td>
+            <td><span id="A-I-c-nilai">0</span></td>
+        </tr>
         @component('components.row_penilaian_input_evaluator',
            [
                'nilaiUnitKerja' => $nilaiAbjad,
@@ -277,11 +325,12 @@
 
     <h4>II. PERENCANAAN KINERJA TAHUNAN (20%)</h4>
     <h4> a. PEMENUHAN PERENCANAAN KINERJA TAHUNAN (4%)</h4>
-    <table class="table table-bordered">
+    <table class="table table-bordered" id="table-A-II-a">
         <thead>
         <tr>
             <td>No</td>
             <td>Sub Komponen</td>
+            <td rowspan="2">Bobot</td>
             <td colspan="2">Unit Kerja/SKPD</td>
             <td width="5%" rowspan="2">Kontrol Kerangka</td>
             <td rowspan="2">Catatan</td>
@@ -294,6 +343,20 @@
         </tr>
         </thead>
         <tbody>
+        <tr>
+            <td>II.</td>
+            <td>PERENCANAAN KINERJA TAHUNAN (20%)</td>
+            <td>20</td>
+            <td><span id="A-II-persentase">0</span></td>
+            <td><span id="A-II-nilai">0</span></td>
+        </tr>
+        <tr>
+            <td>a.</td>
+            <td>PEMENUHAN PERENCANAAN KINERJA TAHUNAN (4%)</td>
+            <td>4</td>
+            <td><span id="A-II-a-persentase">0</span></td>
+            <td><span id="A-II-a-nilai">0</span></td>
+        </tr>
         @component('components.row_penilaian_input_evaluator',
           [
               'nilaiUnitKerja' => $nilaiAbjad,
@@ -341,11 +404,12 @@
     </table>
 
     <h4> b. KUALITAS PERENCANAAN KINERJA TAHUNAN (10%)</h4>
-    <table class="table table-bordered">
+    <table class="table table-bordered" id="table-A-II-b">
         <thead>
         <tr>
             <td>No</td>
             <td>Sub Komponen</td>
+            <td rowspan="2">Bobot</td>
             <td colspan="2">Unit Kerja/SKPD</td>
             <td width="5%" rowspan="2">Kontrol Kerangka</td>
             <td rowspan="2">Catatan</td>
@@ -358,6 +422,13 @@
         </tr>
         </thead>
         <tbody>
+        <tr>
+            <td>b.</td>
+            <td>KUALITAS PERENCANAAN KINERJA TAHUNAN (10%)</td>
+            <td>10</td>
+            <td><span id="A-II-b-persentase">0</span></td>
+            <td><span id="A-II-b-nilai">0</span></td>
+        </tr>
         @component('components.row_penilaian_input_evaluator',
           [
               'nilaiUnitKerja' => $nilaiAbjad,
@@ -472,11 +543,12 @@
         </tbody>
     </table>
     <h4> c. IMPLEMENTASI PERENCANAAN KINERJA TAHUNAN (6%)</h4>
-    <table class="table table-bordered">
+    <table class="table table-bordered" id="table-A-II-c">
         <thead>
         <tr>
             <td>No</td>
             <td>Sub Komponen</td>
+            <td rowspan="2">Bobot</td>
             <td colspan="2">Unit Kerja/SKPD</td>
             <td width="5%" rowspan="2">Kontrol Kerangka</td>
             <td rowspan="2">Catatan</td>
@@ -489,6 +561,13 @@
         </tr>
         </thead>
         <tbody>
+        <tr>
+            <td>c.</td>
+            <td>IMPLEMENTASI PERENCANAAN KINERJA TAHUNAN (6%)</td>
+            <td>6</td>
+            <td><span id="A-II-c-persentase">0</span></td>
+            <td><span id="A-II-c-nilai">0</span></td>
+        </tr>
         @component('components.row_penilaian_input_evaluator',
           [
               'nilaiUnitKerja' => $nilaiAbjad,

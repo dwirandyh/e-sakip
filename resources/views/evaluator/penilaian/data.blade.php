@@ -118,6 +118,11 @@
                             return 'Menunggu Evaluasi';
                         } else if (row.status === 'sementara') {
                             return 'Menunggu Persetujuan Kepala Evaluator';
+                        } else if (row.status === 'revisi'){
+                            return 'Menunggu Waktu Revisi Dari Satuan Kerja';
+                        }
+                        else{
+                            return row.status;
                         }
                     }
                 },

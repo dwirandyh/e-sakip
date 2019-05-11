@@ -1,10 +1,11 @@
 <div class="box-body">
-    <h4>I. PEMENUHAN PENGUKURAN (5%)</h4>
-    <table class="table table-bordered">
+    <h4> II. KUALITAS PENGUKURAN (12,5%)</h4>
+    <table class="table table-bordered" id="table-B-I">
         <thead>
         <tr>
             <td>No</td>
             <td>Sub Komponen</td>
+            <td rowspan="2">Bobot</td>
             <td colspan="2">Unit Kerja/SKPD</td>
             <td width="5%" rowspan="2">Kontrol Kerangka</td>
             <td rowspan="2">Catatan</td>
@@ -18,6 +19,20 @@
         </tr>
         </thead>
         <tbody>
+        <tr>
+            <td>B.</td>
+            <td>PENGUKURAN KINERJA (25%)</td>
+            <td>25</td>
+            <td><span id="B-persentase">0%</span></td>
+            <td><span id="B-nilai">0</span></td>
+        </tr>
+        <tr>
+            <td>I.</td>
+            <td>Pemenuhan Pengukuran (5%)</td>
+            <td>5</td>
+            <td><span id="B-I-persentase">0</span></td>
+            <td><span id="B-I-nilai">0</span></td>
+        </tr>
         @component('components.row_penilaian_input_evaluator',
          [
              'nilaiUnitKerja' => $nilaiYT,
@@ -65,11 +80,12 @@
     </table>
 
     <h4> II. KUALITAS PENGUKURAN (12,5%)</h4>
-    <table class="table table-bordered">
+    <table class="table table-bordered" id="table-B-II">
         <thead>
         <tr>
             <td>No</td>
             <td>Sub Komponen</td>
+            <td rowspan="2">Bobot</td>
             <td colspan="2">Unit Kerja/SKPD</td>
             <td width="5%" rowspan="2">Kontrol Kerangka</td>
             <td rowspan="2">Catatan</td>
@@ -82,6 +98,13 @@
         </tr>
         </thead>
         <tbody>
+        <tr>
+            <td>II.</td>
+            <td>KUALITAS PENGUKURAN (12,5%)</td>
+            <td>12,5</td>
+            <td><span id="B-II-persentase">0</span></td>
+            <td><span id="B-II-nilai">0</span></td>
+        </tr>
 
         @component('components.row_penilaian_input_evaluator',
          [
@@ -191,11 +214,12 @@
     </table>
 
     <h4> III. IMPLEMENTASI PENGUKURAN (7,5%)</h4>
-    <table class="table table-bordered">
+    <table class="table table-bordered" id="table-B-III">
         <thead>
         <tr>
             <td>No</td>
             <td>Sub Komponen</td>
+            <td rowspan="2">Bobot</td>
             <td colspan="2">Unit Kerja/SKPD</td>
             <td width="5%" rowspan="2">Kontrol Kerangka</td>
             <td rowspan="2">Catatan</td>
@@ -208,6 +232,13 @@
         </tr>
         </thead>
         <tbody>
+        <tr>
+            <td>III.</td>
+            <td>IMPLEMENTASI PENGUKURAN (7,5%)</td>
+            <td>7,5</td>
+            <td><span id="B-III-persentase">0</span></td>
+            <td><span id="B-III-nilai">0</span></td>
+        </tr>
         @component('components.row_penilaian_input_evaluator',
             [
                 'nilaiUnitKerja' => $nilaiAbjad,

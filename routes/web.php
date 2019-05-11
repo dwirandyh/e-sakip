@@ -50,5 +50,9 @@ Route::middleware('auth:petugas')->group(function(){
     Route::get('/penilaian/submit/{id}', 'PenilaianController@submitForm');
     Route::post('/penilaian/submit/{id}/store', 'PenilaianController@submit');
 
+    Route::get('/penilaian/raport-sementara/{id}', 'PenilaianController@temporaryReport');
+
+    Route::get('/penilaian/revisi/{id}', 'PenilaianController@revisiForm');
+    Route::post('/penilaian/revisi/{id}/submit', 'PenilaianController@submitRevisi');
 });
 

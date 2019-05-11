@@ -2,23 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16b44d05-2b67-4a63-80bf-6e0a03eb468d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Models/KriteriaPenilaian.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/penilaian/raport_sementara.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/penilaian/revisi.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Evaluator/EvaluatorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Evaluator/EvaluatorController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PetugasSatkerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PetugasSatkerController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Evaluator/PenilaianController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Evaluator/PenilaianController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PenilaianController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PenilaianController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/DetailPenilaian.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/DetailPenilaian.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Penilaian.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Penilaian.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/PenilaianRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/PenilaianRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-sakip.rar" beforeDir="false" afterPath="$PROJECT_DIR$/e-sakip.rar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laradock" beforeDir="false" afterPath="$PROJECT_DIR$/laradock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laradock/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/laradock/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laradock/nginx/sites/default.conf" beforeDir="false" afterPath="$PROJECT_DIR$/laradock/nginx/sites/default.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laradock/php-fpm/php7.3.ini" beforeDir="false" afterPath="$PROJECT_DIR$/laradock/php-fpm/php7.3.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laradock/redis/redis.conf" beforeDir="false" afterPath="$PROJECT_DIR$/laradock/redis/redis.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/form_penilaian.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/form_penilaian.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/row_penilaian_input_evaluator.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/row_penilaian_input_evaluator.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/components/row_penilian_input.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/row_penilian_input.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/evaluator/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evaluator/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/evaluator/penilaian/data.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evaluator/penilaian/data.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/evaluator/penilaian/input_a.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evaluator/penilaian/input_a.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/evaluator/penilaian/input_b.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evaluator/penilaian/input_b.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/evaluator/penilaian/input_c.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evaluator/penilaian/input_c.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/evaluator/penilaian/input_d.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evaluator/penilaian/input_d.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/evaluator/penilaian/input_e.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evaluator/penilaian/input_e.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/evaluator/penilaian/submit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/evaluator/penilaian/submit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/penilaian/data.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/penilaian/data.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/penilaian/input_a.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/penilaian/input_a.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/penilaian/input_b.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/penilaian/input_b.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/penilaian/input_c.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/penilaian/input_c.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/penilaian/input_d.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/penilaian/input_d.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/penilaian/input_e.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/penilaian/input_e.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/penilaian/submit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/penilaian/submit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/penilaian/tambah.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/penilaian/tambah.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/update.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor.rar" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,26 +47,7 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/components/row_penilian_input.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="54" column="9" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/components/row_penilaian_input_evaluator.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="30" column="9" lean-forward="true" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -60,36 +58,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>admin.js</find>
-      <find>Perencanaan Stra</find>
-      <find>perencanaan Strategis</find>
-      <find>icheck</find>
-      <find>item</find>
-      <find>table-A-i-c</find>
-      <find>A-I-A</find>
-      <find>A-I-nilai</find>
-      <find>A-II-nilai</find>
-      <find>Implementasi pere</find>
-      <find>perencanaan kinerja tah</find>
-      <find>PERENCANAAN KINERJA TAH</find>
-      <find>E-SAKIP</find>
-      <find>kualitas perencana</find>
-      <find>2.5</find>
-      <find>E</find>
-      <find>display</find>
-      <find>redirect</find>
-      <find>evaluator.</find>
-      <find>evaluator.penilaian.</find>
-      <find>penilaian.</find>
-      <find>out</find>
-      <find>logout</find>
-      <find>petugas</find>
-      <find>RedirectIf</find>
-      <find>auth</find>
-      <find>$this-&gt;redirect</find>
-      <find>redirectTo</find>
-      <find>dashboa</find>
-      <find>dashboard</find>
+      <find>input type=&quot;</find>
+      <find>$penilaian</find>
+      <find>perencanaan kinerja tahunan</find>
+      <find>nilai_a</find>
+      <find>nil</find>
+      <find>nilai_a_per</find>
+      <find>A-nilai</find>
+      <find>%</find>
+      <find>valueDetai</find>
+      <find>row_penilaian_input_evaluator</find>
+      <find>submit</find>
+      <find>valueDetail</find>
+      <find>tex</find>
+      <find>text</find>
+      <find>hidden</find>
+      <find>~emp</find>
+      <find>valueEvalua</find>
+      <find>thead</find>
+      <find>&lt;thead&gt;</find>
+      <find>Cattan E</find>
+      <find>tahun</find>
+      <find>Catatan</find>
+      <find>status</find>
+      <find>$detail['</find>
+      <find>arrKategoriEOptions</find>
+      <find>$arrKategoriENilai</find>
+      <find>arrKategoriEN</find>
+      <find>sem</find>
+      <find>sementara</find>
+      <find>revisi</find>
     </findStrings>
     <replaceStrings>
       <replace>src=&quot;{{ asset('/adminlte</replace>
@@ -101,10 +99,14 @@
       <replace>$nilaiAbjad</replace>
       <replace>-</replace>
       <replace>evaluator</replace>
-      <replace>row_penilaian_input_evaluator</replace>
       <replace>penilaian.</replace>
       <replace>evaluator.penilaian</replace>
       <replace>evaluator.penilaian.</replace>
+      <replace>row_penilaian_input_evaluator</replace>
+      <replace>$detailPenilaian</replace>
+      <replace>submit</replace>
+      <replace>hidden</replace>
+      <replace>text</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -113,57 +115,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/administrator/dashboard.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" />
-        <option value="$PROJECT_DIR$/app/Exceptions/Handler.php" />
-        <option value="$PROJECT_DIR$/app/Models/Penilaian.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/OldPenilaianController.php" />
-        <option value="$PROJECT_DIR$/app/Repositories/BaseRepository.php" />
-        <option value="$PROJECT_DIR$/app/Repositories/PenilaianRepository.php" />
         <option value="$PROJECT_DIR$/app/Repositories/DetailPenilaianRepository.php" />
         <option value="$PROJECT_DIR$/config/auth.php" />
         <option value="$PROJECT_DIR$/app/Models/Evaluator.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/EvaluatorController.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/evaluator_sidebar.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/evaluator/penilaian/tambah.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/evaluator/penilaian/input_a.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/evaluator/penilaian/input_b.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/evaluator/penilaian/input_c.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/evaluator/penilaian/input_d.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/evaluator/penilaian/input_e.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Evaluator/PenilaianController.php" />
         <option value="$PROJECT_DIR$/resources/views/login.blade.php" />
         <option value="$PROJECT_DIR$/config/custom.php" />
         <option value="$PROJECT_DIR$/public/js/admin.js" />
-        <option value="$PROJECT_DIR$/resources/views/penilaian/data.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/penilaian/tambahh.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/PenilaianController.php" />
-        <option value="$PROJECT_DIR$/resources/views/penilaian/input_b.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/penilaian/input_c.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/penilaian/input_d.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/penilaian/input_e.blade.php" />
-        <option value="$PROJECT_DIR$/public/js/form_penilaian.js" />
         <option value="$PROJECT_DIR$/resources/views/dashboard.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/admin_sidebar.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/penilaian/input_a.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/penilaian/submit.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/penilaian/tambah.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/components/row_penilaian_input_evaluator.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/components/row_penilian_input.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/evaluator_app.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/evaluator/dashboard.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/evaluator/penilaian/data.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/evaluator/penilaian/submit.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" />
         <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/Middleware/Authenticate.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Evaluator/EvaluatorController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Evaluator/DashboardController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/PetugasSatkerController.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
+        <option value="$PROJECT_DIR$/resources/views/components/row_penilian_input_evaluator.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/evaluator/penilaian/input_a.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/evaluator/penilaian/input_b.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/evaluator/penilaian/input_c.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/evaluator/penilaian/input_d.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/evaluator/penilaian/input_e.blade.php" />
+        <option value="$PROJECT_DIR$/app/Models/KriteriaPenilaian.php" />
+        <option value="$PROJECT_DIR$/app/Repositories/PenilaianRepository.php" />
+        <option value="$PROJECT_DIR$/resources/views/penilaian/raport_sementara.blade.php" />
+        <option value="$PROJECT_DIR$/app/Models/Penilaian.php" />
+        <option value="$PROJECT_DIR$/resources/views/evaluator/penilaian/submit.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/penilaian/input_a.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/penilaian/revisi.blade.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/app/Models/DetailPenilaian.php" />
+        <option value="$PROJECT_DIR$/resources/views/penilaian/input_b.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/penilaian/input_c.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/penilaian/input_d.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/penilaian/input_e.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/penilaian/data.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/penilaian/tambah.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/penilaian/submit.blade.php" />
+        <option value="$PROJECT_DIR$/public/js/form_penilaian.js" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/PenilaianController.php" />
+        <option value="$PROJECT_DIR$/resources/views/components/row_penilian_input.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/components/row_penilaian_input_evaluator.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/evaluator/penilaian/data.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Evaluator/PenilaianController.php" />
       </list>
     </option>
   </component>
@@ -302,6 +304,14 @@
             <path>
               <item name="e-sakip" type="b2602c69:ProjectViewProjectNode" />
               <item name="e-sakip" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="Evaluator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="e-sakip" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e-sakip" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -315,7 +325,22 @@
               <item name="e-sakip" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="evaluator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="e-sakip" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e-sakip" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="evaluator" type="462c0819:PsiDirectoryNode" />
+              <item name="penilaian" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="e-sakip" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e-sakip" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="penilaian" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -330,19 +355,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Project\Website\E-SAKIP\Platform\e-sakip\resources\views\layouts" />
-      <recent name="D:\Project\Website\E-SAKIP\Platform\e-sakip\public\images" />
-      <recent name="D:\Project\Website\E-SAKIP\Platform\e-sakip\resources\views\evaluator\penilaian" />
-      <recent name="D:\Project\Website\E-SAKIP\Platform\e-sakip\app\Http\Controllers\Evaluator" />
-      <recent name="D:\Project\Website\E-SAKIP\Platform\e-sakip\resources\views\evaluator" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Project\Website\E-SAKIP\Platform\e-sakip\app\Http\Controllers\Evaluator" />
       <recent name="D:\Project\Website\E-SAKIP\Platform\e-sakip\app\Http\Controllers" />
       <recent name="D:\Project\Website\E-SAKIP\Platform\e-sakip\app\Http\Controllers\Administrator\SatuanKerja" />
       <recent name="D:\Project\Website\E-SAKIP\Platform\e-sakip\resources\views\administrator\satuan_kerja" />
       <recent name="D:\Project\Website\E-SAKIP\Platform\e-sakip\app\Models" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Project\Website\E-SAKIP\Platform\e-sakip\resources\views\penilaian" />
+      <recent name="D:\Project\Website\E-SAKIP\Platform\e-sakip\app\Models" />
+      <recent name="D:\Project\Website\E-SAKIP\Platform\e-sakip\resources\views\evaluator\penilaian" />
+      <recent name="D:\Project\Website\E-SAKIP\Platform\e-sakip\resources\views\components" />
+      <recent name="D:\Project\Website\E-SAKIP\Platform\e-sakip\resources\views\layouts" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -388,18 +413,23 @@
       <workItem from="1557024573188" duration="4552000" />
       <workItem from="1557032346382" duration="568000" />
       <workItem from="1557033151980" duration="448000" />
-      <workItem from="1557108144888" duration="6367000" />
+      <workItem from="1557108144888" duration="7800000" />
+      <workItem from="1557131863904" duration="8328000" />
+      <workItem from="1557194196825" duration="3888000" />
+      <workItem from="1557247679968" duration="3189000" />
+      <workItem from="1557265915859" duration="2037000" />
+      <workItem from="1557285622842" duration="1145000" />
+      <workItem from="1557581517349" duration="3701000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84260000" />
+    <option name="totallyTimeSpent" value="107981000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25037822" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2730711" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -414,7 +444,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32850242" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.19806764" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -458,230 +488,8 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Models/Evaluator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#30#75#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/evaluator/penilaian/tambah.blade.php" />
-    <entry file="file://$PROJECT_DIR$/resources/views/evaluator/penilaian/input_c.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="10" column="50" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/evaluator/penilaian/input_d.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Evaluator/PenilaianController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2159">
-          <caret line="137" column="58" selection-start-line="137" selection-start-column="58" selection-end-line="137" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/logo.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/login.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="112" column="32" lean-forward="true" selection-start-line="112" selection-start-column="32" selection-end-line="112" selection-end-column="32" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/custom.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/admin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="161" lean-forward="true" selection-start-line="161" selection-end-line="161" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="e#6503#7609#0" />
-            <element signature="e#7667#7847#0" />
-            <element signature="e#7893#8189#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/penilaian/input_b.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="16" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="18" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/penilaian/input_c.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="33" column="13" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="33" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/VisiMisi.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/admin_sidebar.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="61" lean-forward="true" selection-start-line="13" selection-start-column="61" selection-end-line="13" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/penilaian/input_d.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="562">
-          <caret line="105" column="13" selection-start-line="81" selection-start-column="4" selection-end-line="105" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/penilaian/input_e.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="32" column="50" lean-forward="true" selection-start-line="32" selection-start-column="50" selection-end-line="32" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/components/select.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/vendor/pagination/bootstrap-4.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/penilaian/submit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="207" column="62" lean-forward="true" selection-start-line="207" selection-start-column="62" selection-end-line="207" selection-end-column="62" />
-          <folding>
-            <element signature="e#14406#14428#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/form_penilaian.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7">
-          <caret line="66" column="10" selection-start-line="66" selection-start-column="10" selection-end-line="66" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/dashboard.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="29" lean-forward="true" selection-end-line="43" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/penilaian/tambah.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="133" column="62" lean-forward="true" selection-start-line="133" selection-start-column="62" selection-end-line="133" selection-end-column="62" />
-          <folding>
-            <element signature="e#11516#11538#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/penilaian/data.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1632">
-          <caret line="96" column="43" lean-forward="true" selection-start-line="96" selection-start-column="43" selection-end-line="96" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/penilaian/input_a.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="552" column="40" lean-forward="true" selection-start-line="552" selection-start-column="40" selection-end-line="552" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/evaluator/penilaian/input_e.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/auth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2057">
-          <caret line="121" lean-forward="true" selection-start-line="121" selection-end-line="121" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="10" column="39" lean-forward="true" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/logout_petugas.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="23" lean-forward="true" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/evaluator/penilaian/input_a.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/evaluator/penilaian/input_b.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="10" column="50" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/evaluator_app.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/evaluator/penilaian/data.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="21" selection-start-column="18" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/evaluator/penilaian/submit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="40" lean-forward="true" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/logout_petugas.blade.php" />
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/evaluator_app.blade.php" />
     <entry file="file://$PROJECT_DIR$/resources/views/evaluator/dashboard.blade.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -734,16 +542,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Evaluator/EvaluatorController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="35" column="7" lean-forward="true" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
-          <folding>
-            <element signature="e#50#86#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-328">
@@ -768,26 +566,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PetugasSatkerController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="50" column="37" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
-          <folding>
-            <element signature="e#40#90#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PenilaianController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="72" column="19" selection-start-line="72" selection-start-column="19" selection-end-line="72" selection-end-column="19" />
-          <folding>
-            <element signature="e#129#183#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -798,24 +576,250 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="939">
+          <caret line="605" column="51" lean-forward="true" selection-start-line="605" selection-start-column="51" selection-end-line="605" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/KriteriaPenilaian.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="84" selection-start-line="16" selection-start-column="84" selection-end-line="16" selection-end-column="84" />
+          <folding>
+            <element signature="e#30#69#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/PetugasSatker.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Evaluator.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/SatuanKerja.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/penilaian/raport_sementara.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="513" column="30" lean-forward="true" selection-start-line="513" selection-start-column="30" selection-end-line="513" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Repositories/PenilaianRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/components/old_row_penilaian_input_evaluator.blade.php" />
+    <entry file="file://$PROJECT_DIR$/resources/views/evaluator/penilaian/input_b.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="35" column="62" lean-forward="true" selection-start-line="35" selection-start-column="62" selection-end-line="35" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/evaluator/penilaian/input_c.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3691">
+          <caret line="13" column="12" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/evaluator/penilaian/input_d.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="212" column="60" selection-start-line="212" selection-start-column="60" selection-end-line="212" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/evaluator/penilaian/input_e.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1552">
+          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Evaluator/EvaluatorController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+          <folding>
+            <element signature="e#50#86#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/evaluator/penilaian/input_a.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="42" column="48" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/evaluator/penilaian/submit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="225" column="56" selection-start-line="225" selection-start-column="56" selection-end-line="225" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Penilaian.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1156">
+          <caret line="69" column="21" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PetugasSatkerController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="50" column="37" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
+          <folding>
+            <element signature="e#40#90#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/DetailPenilaian.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="151" selection-start-line="10" selection-start-column="151" selection-end-line="10" selection-end-column="151" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/files/revisi/d73b5e2fe6719d59e08d7ddccc707097.png" />
+    <entry file="file://$PROJECT_DIR$/public/files/revisi/1649312593d4d2de1d828e3b1235a768.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/penilaian/input_a.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="14" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/penilaian/input_b.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="229" column="48" selection-start-line="229" selection-start-column="48" selection-end-line="229" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="46" column="44" selection-start-line="46" selection-start-column="44" selection-end-line="46" selection-end-column="44" />
+        <state relative-caret-position="457">
+          <caret line="55" column="46" selection-start-line="55" selection-start-column="46" selection-end-line="55" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/penilaian/input_c.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/penilaian/input_d.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="193" column="47" selection-start-line="193" selection-start-column="47" selection-end-line="193" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/penilaian/revisi.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="53" column="55" selection-start-line="53" selection-start-column="55" selection-end-line="53" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Repositories/DetailPenilaianRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/penilaian/tambah.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="174" column="86" selection-start-line="174" selection-start-column="86" selection-end-line="174" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/penilaian/submit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="220" column="62" selection-start-line="220" selection-start-column="62" selection-end-line="220" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/penilaian/input_e.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1212">
+          <caret line="38" column="47" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/form_penilaian.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="87" column="31" selection-start-line="87" selection-start-column="31" selection-end-line="87" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/components/row_penilian_input.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="54" column="9" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
+        <state relative-caret-position="457">
+          <caret line="79" column="14" lean-forward="true" selection-start-line="71" selection-start-column="8" selection-end-line="79" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/components/row_penilaian_input_evaluator.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="30" column="9" lean-forward="true" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+        <state relative-caret-position="381">
+          <caret line="71" column="45" selection-start-line="71" selection-start-column="45" selection-end-line="71" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PenilaianController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="315" column="38" lean-forward="true" selection-start-line="315" selection-start-column="38" selection-end-line="315" selection-end-column="38" />
+          <folding>
+            <element signature="e#129#183#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/penilaian/data.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="115" column="53" lean-forward="true" selection-start-line="115" selection-start-column="53" selection-end-line="115" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/evaluator/penilaian/data.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="123" column="29" lean-forward="true" selection-start-line="123" selection-start-column="29" selection-end-line="123" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Evaluator/PenilaianController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="112" column="36" selection-start-line="112" selection-start-column="36" selection-end-line="112" selection-end-column="36" />
         </state>
       </provider>
     </entry>

@@ -90,6 +90,10 @@ $("tr select").change(function () {
     sumTotal();
 });
 
+$(".nilaiE").change(function(){
+    $('tr select').trigger('change');
+});
+
 function hitungPersentaseKriteria() {
     var arrKriteria = [
         ['A-I-a', 2],
@@ -122,6 +126,11 @@ function hitungPersentaseKriteria() {
         var resultA = (nilaiA / aParameterCount) * 100;
         $("#" + arr[index][0] + "-persentase").html(resultA.toFixed(2) + '%');
         $("#" + arr[index][0] + "-nilai").html(((resultA / 100) * arr[index][1]).toFixed(2));
+
+
+        var idx = arr[index][0].toString().replace('-', '_').replace('-', '_');
+        $("#nilai_" + idx + "_persentase").val(resultA.toFixed(2));
+        $("#nilai_" + idx).val(((resultA / 100) * arr[index][1]).toFixed(2));
     });
 
     var nilaiAIa = parseFloat($("#A-I-a-nilai").html());
@@ -131,6 +140,9 @@ function hitungPersentaseKriteria() {
     $("#A-I-nilai").html(nilaiAI.toFixed(2));
     $("#A-I-persentase").html((nilaiAI / 10 * 100).toFixed(2));
 
+    $("#nilai_A_I").val(nilaiAI.toFixed(2));
+    $("#nilai_A_I_persentase").val((nilaiAI / 10 * 100).toFixed(2));
+
     var nilaiAIIa = parseFloat($("#A-II-a-nilai").html());
     var nilaiAIIb = parseFloat($("#A-II-b-nilai").html());
     var nilaiAIIc = parseFloat($("#A-II-c-nilai").html());
@@ -138,9 +150,15 @@ function hitungPersentaseKriteria() {
     $("#A-II-nilai").html(nilaiAII.toFixed(2));
     $("#A-II-persentase").html((nilaiAII / 20 * 100).toFixed(2));
 
+    $("#nilai_A_II").val(nilaiAI.toFixed(2));
+    $("#nilai_A_II_persentase").val((nilaiAI / 10 * 100).toFixed(2));
+
     var nilaiA = nilaiAI + nilaiAII;
     $("#A-nilai").html(nilaiA.toFixed(2));
     $("#A-persentase").html((nilaiA / 30 * 100).toFixed(2));
+
+    $("#nilai_A").val(nilaiAI.toFixed(2));
+    $("#nilai_A_persentase").val((nilaiAI / 10 * 100).toFixed(2));
 
     var nilaiBI = parseFloat($("#B-I-nilai").html());
     var nilaiBII = parseFloat($("#B-II-nilai").html());
@@ -149,12 +167,18 @@ function hitungPersentaseKriteria() {
     $("#B-nilai").html(nilaiB.toFixed(2));
     $("#B-persentase").html((nilaiB / 25 * 100).toFixed(2));
 
+    $("#nilai_B").val(nilaiAI.toFixed(2));
+    $("#nilai_B_persentase").val((nilaiAI / 10 * 100).toFixed(2));
+
     var nilaiCI = parseFloat($("#C-I-nilai").html());
     var nilaiCII = parseFloat($("#C-II-nilai").html());
     var nilaiCIII = parseFloat($("#C-III-nilai").html());
     var nilaiC = nilaiCI + nilaiCII + nilaiCIII;
     $("#C-nilai").html(nilaiC.toFixed(2));
     $("#C-persentase").html((nilaiC / 15 * 100).toFixed(2));
+
+    $("#nilai_C").val(nilaiAI.toFixed(2));
+    $("#nilai_C_persentase").val((nilaiAI / 10 * 100).toFixed(2));
 
     var nilaiDI = parseFloat($("#D-I-nilai").html());
     var nilaiDII = parseFloat($("#D-II-nilai").html());
@@ -163,6 +187,8 @@ function hitungPersentaseKriteria() {
     $("#D-nilai").html(nilaiD.toFixed(2));
     $("#D-persentase").html((nilaiD / 10 * 100).toFixed(2));
 
+    $("#nilai_D").val(nilaiAI.toFixed(2));
+    $("#nilai_D_persentase").val((nilaiAI / 10 * 100).toFixed(2));
 
 
 
@@ -184,6 +210,10 @@ function hitungPersentaseKriteria() {
         var resultA = nilaiA;
         $("#" + arr[index][0] + "-nilai").html(resultA.toFixed(2));
         $("#" + arr[index][0] + "-persentase").html((resultA / arr[index][1] * 100).toFixed(2));
+
+        var idx = arr[index][0].toString().replace('-', '_').replace('-', '_');
+        $("#nilai_" + idx + "_persentase").val((resultA / arr[index][1] * 100).toFixed(2));
+        $("#nilai_" + idx).val(resultA.toFixed(2));
     });
 
     var nilaiEI = parseFloat($("#E-I-nilai").html());
@@ -191,6 +221,8 @@ function hitungPersentaseKriteria() {
     var nilaiE = nilaiEI + nilaiEII;
     $("#E-nilai").html(nilaiE.toFixed(2));
     $("#E-persentase").html((nilaiE / 20 * 100).toFixed(2));
+    $("#nilai_E").val(nilaiE.toFixed(2));
+    $("#nilai_E_persentase").val((nilaiE / 20 * 100).toFixed(2));
 }
 
 function sumTotal() {

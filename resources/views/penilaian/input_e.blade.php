@@ -9,6 +9,10 @@
             <td colspan="2">Unit Kerja/SKPD</td>
             <td width="5%" rowspan="2">Kontrol Kerangka</td>
             <td rowspan="2">Catatan</td>
+            {!! $status == 'sementara' ? '<td rowspan="2">Catatan Evaluator</td>
+            <td rowspan="2">Catatan Revisi</td>
+            <td rowspan="2">File Revisi</td>
+            ' : '' !!}
         </tr>
         <tr>
             <td></td>
@@ -77,6 +81,10 @@
             <td colspan="2">Unit Kerja/SKPD</td>
             <td width="5%" rowspan="2">Kontrol Kerangka</td>
             <td rowspan="2">Catatan</td>
+            {!! $status == 'sementara' ? '<td rowspan="2">Catatan Evaluator</td>
+            <td rowspan="2">Catatan Revisi</td>
+            <td rowspan="2">File Revisi</td>
+            ' : '' !!}
         </tr>
         <tr>
             <td></td>

@@ -31,7 +31,14 @@ class PenilaianRepository extends BaseRepository
         ];
     }
 
+
     public function getDetailPenilaianById($id){
         return DetailPenilaian::where('id_penilaian', '=', $id)->get();
+    }
+
+    public function getDetailPenilaianSubCategory($idPenilaian){
+        return DetailPenilaian::with(['kriteria'])
+            ->where('id_penilaian', '=', $idPenilaian)
+            ->get()->groupBy('kriteria.subkategori');
     }
 }
